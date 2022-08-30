@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Miacarmen/tv-show-search/issues"
   },
-  "homepage": "https://github.com/Miacarmen/tv-show-search#readme"
+  "homepage": "https://github.com/Miacarmen/tv-show-search#readme",
+  "dependencies": {
+    "axios": "^0.27.2"
+  }
 }
