@@ -18,7 +18,8 @@ const postImages = (shows) => {
     if (result.show.image) {
       const img = document.createElement('IMG');
       img.src = result.show.image.medium;
-      document.body.append(img);
+      let resultList = document.getElementById('results-container');
+      resultList.appendChild(img);
     }
   }
 };
