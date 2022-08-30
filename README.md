@@ -6,16 +6,14 @@
 - [Deployed Link](#deployed)
 - [Tools](#tools)
 - [Dependencies](#dependencies)
+- [Installation](#installation) 
 - [Usage](#usage)
 - [Credits](#credits)
 - [License](#license)
 
 ## Description
 
-
-## Deployed Site
-
-[See Live Site Here]()
+A simple search engine to find TV shows containing a specific word or title. Implemented using Axios to get data from tvmaze.com
 
 ## Technologies
 
@@ -31,7 +29,22 @@
 ## Dependencies
 - [axios](https://axios-http.com/docs/intro)
 
+## Installation
+
+1. Clone this repository to your local machine
+2. Open in your preferred editor
+3. Install dependencies
+ ``` npm install
+ npm install
+ ```
+``` axios
+npm i axios
+```
+4. Open in your default browser to begin searching
+
 ## Usage
+
+Use the search bar to find TV shows, either by entering a word to find any shows that contains that word, or by entering a specific show's title.
 
 ### Credits
 
