@@ -1,6 +1,8 @@
 const form = document.querySelector('#searchForm');
+let resultList = document.getElementById('results-container');
 
 form.addEventListener('submit', async function (event) {
+  clearPrevious();
   event.preventDefault();
   console.log('Submitted!');
   const searchTerm = form.elements.query.value;
@@ -16,10 +18,15 @@ form.addEventListener('submit', async function (event) {
 const postImages = (shows) => {
   for (let result of shows) {
     if (result.show.image) {
+      // create image element for each show result
       const img = document.createElement('IMG');
       img.src = result.show.image.medium;
-      let resultList = document.getElementById('results-container');
+      // add each img to resultList div
       resultList.appendChild(img);
     }
   }
+};
+
+const clearPrevious = () => {
+  resultList.innerText = '';
 };
